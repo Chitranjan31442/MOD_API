@@ -69,26 +69,7 @@ namespace MOD_TEST
             UserDtl user1 = user.getUserById(2);
             Assert.IsTrue(user1.active == true);
         }
-
-
-        [Test]
-        public void getSkillById()
-        {
-            user user = new user();
-            SkillDtl p = user.getSkillById(1);
-            Assert.IsNotNull(p);
-        }
-
-        [Test]
-        public void delete()
-        {
-            user user = new user();
-            user.DeleteSkillById(1);
-            SkillDtl sk = user.getSkillById(1);
-            Assert.IsTrue(sk == null);
-        }
-
-
+        
 
     }
 }
